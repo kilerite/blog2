@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :posts, except: [:index]
-  get '/post',  to: 'posts#index',   as: 'user_root'
+  get '/posts',  to: 'posts#index',   as: 'user_root'
     get 'homre/index'
   devise_for :users, controllers: { 
     sessions: "users/sessions",
